@@ -1,0 +1,105 @@
+*{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+/*NAVBAR*/
+nav {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+
+/*LANDING PAGE*/
+.banner{
+    background-image: url(images/banner.jpg);
+    position: relative;
+    height: 640px;
+    width: 100%;
+    bottom: 70px;
+}
+
+
+/*sobre*/
+
+
+/*grid*/
+#grid article:nth-child(1) div:nth-child(1){ background-image: url(images/foto1.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(1) div:nth-child(2){ background-image: url(images/foto2.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(1) div:nth-child(3){ background-image: url(images/foto3.jpg); position: relative; background-size: cover; }
+
+#grid article:nth-child(2) div:nth-child(1){ background-image: url(images/foto4.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(2) div:nth-child(2){ background-image: url(images/foto5.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(2) div:nth-child(3){ background-image: url(images/foto6.jpg); position: relative; background-size: cover; }
+
+#grid article:nth-child(3) div:nth-child(1){ background-image: url(images/foto7.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(3) div:nth-child(2){ background-image: url(images/foto8.jpg); position: relative; background-size: cover; }
+
+#grid article:nth-child(4) div:nth-child(1){ background-image: url(images/foto9.jpg); position: relative; background-size: cover; }
+#grid article:nth-child(4) div:nth-child(2){ background-image: url(images/foto10.jpg); position: relative; background-size: cover; }
+
+
+/*footer*/
+footer{
+    margin-top: 45px;
+}
+footer p,h5 {
+    color: WHITE;
+}
+
+footer li a{
+    color: white;
+    font-size: 17.5px;
+    margin: 25px 0 25px 0;
+}
+/*ETC*/
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+
+.caixa{
+    height: 300px !important;
+}
+
+
+.caixa img{
+    position: relative;
+    height: 300px !important;
+}
+
+
+section{
+    margin-top:90px;
+}
+
+
+#relatos {
+    background-color:#b71c1c;
+    height: 300px;
+}
+
+
+#relatos h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'roboto';
+}
+
+/*Mobile*/
+@media (max-width: 600px) 
+{
+    .banner{
+        background-image: url(images/banner.jpg);
+        position: relative;
+        height: 440px;
+        width: 100%;
+        bottom: 70px;
+    }
+}
