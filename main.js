@@ -1,8 +1,9 @@
+//navbar scrooll turn to black
 $(document).ready(function(){
           
     $(window).scroll(function(){
 
-      if($(window).scrollTop()>300){
+      if($(window).scrollTop()>50){
         $('nav').addClass('black');
       }else{
         $('nav').removeClass('black');
@@ -13,19 +14,11 @@ $(document).ready(function(){
 });
 
 
+// JS sidenav
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
 });
-
-
-// JS ZOOM IMAGE
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
-});
-
-
 
 
 const elemsBtns = document.querySelectorAll(".fixed-action-btn");

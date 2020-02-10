@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto&display=swap');
+
+
 *{
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 
 /*NAVBAR*/
@@ -13,15 +15,25 @@ nav {
     box-shadow: none;
 }
 
+nav .brand-logo {
+    font-family: 'PT Mono', monospace;
+}
 
 /*LANDING PAGE*/
-.banner{
-    background-image: url(images/banner.jpg);
+#landingpage{
+    background-image: url(images/banner1.jpg);
     position: relative;
     height: 640px;
     width: 100%;
     bottom: 70px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
+
+#landingpage h1:nth-child(1){ font-size: 130px; color: white; }
+#landingpage h1:nth-child(2){ font-size: 90px; color: white; margin-top: -30px;}
+#landinpage p { font-size: 45px;color: white; margin-top:10px;}
 
 
 /*sobre*/
@@ -47,19 +59,66 @@ nav {
 footer{
     margin-top: 45px;
 }
+
 footer p,h5 {
     color: WHITE;
 }
 
 footer li a{
     color: white;
-    font-size: 17.5px;
-    margin: 25px 0 25px 0;
+    font-size: 20.5px;
+    margin-left: 20.5px;
 }
+
+footer li{
+    padding-top: 15px !important;
+}
+
+
+/*RELATOS*/
+#relatos {
+    background-color:#b71c1c;
+    height: 300px;
+}
+
+
+#relatos h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'roboto';
+}
+
+
+/*FORMULÁRIO*/
+#formulario{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario label  {
+    color: #000;
+}
+#formulario input[type=text]:focus  {
+    color: #000;
+    border-bottom: 1px solid #4a148c ;
+    box-shadow: 0 1px 0 0 #6a1b9a;
+}
+
+#formulario input[type=email]:focus  {
+    color: #000;
+    border-bottom: 1px solid #4a148c ;
+    box-shadow: 0 1px 0 0 #6a1b9a;
+}
+
+
 /*ETC*/
 h1 {
-    font-family: 'Lobster', cursive;
     font-size: 40px;
+    font-family: 'PT Mono', monospace;;
 }
 
 
@@ -79,18 +138,8 @@ section{
 }
 
 
-#relatos {
-    background-color:#b71c1c;
-    height: 300px;
-}
 
 
-#relatos h1{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'roboto';
-}
 
 /*Mobile*/
 @media (max-width: 600px) 

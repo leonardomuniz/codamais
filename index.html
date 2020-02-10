@@ -1,169 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Site Materialize</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <nav class="navbar-fixed">  
-            <nav>
-                <div class="container nav-wrapper">
-                    <a href="#" class="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-navbar" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Album</a></li>
-                        <li><a href="#">Relatos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-            </nav>
-          </nav>      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>📷 P.P. </title>
 
-        <ul id="mobile-navbar" class="sidenav"> 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Álbum</a></li>
-            <li><a href="#">Relatos</a></li>
-            <li><a href="#">Contato</a></li>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!--NavBar-->
+  <nav class="navbar-fixed" id="navbar">
+    <nav>
+      <div class="container nav-wrapper">
+        <a href="#" class="brand-logo">Peter Porker</a>
+        <a href="#" data-target="mobile-navbar" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#landingpage">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#grid">Album</a></li>
+          <li><a href="#relatos">Relatos</a></li>
+          <li><a href="#contatos">Contato</a></li>
         </ul>
+      </div>
+    </nav>
+  </nav>
 
+  <!--sidebar menu-->
+  <ul id="mobile-navbar" class="sidenav">
+    <li><a href="#landingpage">Home</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#grid">Album</a></li>
+    <li><a href="#relatos">Relatos</a></li>
+    <li><a href="#contatos">Contato</a></li>
+  </ul>
+
+
+  <!--Landingpage-->
+  <div class="row" id="landingpage">
+    <div class="col m12 l12">
+      <div class="container">
+        <h1>peter</h1>
+        <h1>porker</h1>
+        <p>Fotografo.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--sobre-->
+  <section class="container" id="sobre">
+    <h1 class="center">Sobre</h1>
+    <div>
+      <p class="center-align">1995. Nascido e criado na minha amada "Ceilôndres", me formei aos 20 no IFB em Sistemas p/ Internet, logo depois começando minha carreira como freela, descobri minha paixão por design e fotografia !</p>
+    </div>
+  </section>
+
+
+  <!--Grid fotos-->
+  <section class="row" id="grid">
+    <article class="col s12 m12 l12">
+      <div class="col s12 m4 l4 caixa hoverable"></div>
+      <div class="col s12 m5 l5 caixa hoverable"></div>
+      <div class="col s12 m3 l3 caixa hoverable"></div>
+    </article>
+    <article class="col s12 m12 l12">
+      <div class="col s12 m3 l3 caixa hoverable"></div>
+      <div class="col s12 m5 l5 caixa hoverable"></div>
+      <div class="col s12 m4 l4 accent-2 caixa hoverable"></div>
+    </article>
+    <article class="col s12 m12 l12">
+      <div class="col s12 m5 l5 caixa hoverable"></div>
+      <div class="col s12 m7 l7 caixa hoverable"></div>
+    </article>
+    <article class="col s12 m12 l12">
+      <div class="col s12 m7 l7 caixa hoverable"></div>
+      <div class="col s12 m5 l5 caixa hoverable"></div>
+    </article>
+  </section>
+
+
+  <!--relatos-->
+  <section id="relatos">
+    <h1>estamos em obras</h1>
+  </section>
+
+
+  <!--Formulário-->
+  <section class="container center" id="formulario">
+    <article class="row ">
+      <form class="col s12">
+        <h1>peça um orçamento !</h1>
         <div class="row">
-            <div class="col m12 l12">
-                <img src="images/banner.jpg" class="banner">
-            </div>
+          <div class="input-field col s12">
+            <input id="nome" type="text" class="validate">
+            <label for="nome">Nome</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="textarea" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2">Fale mais :D</label>
+          </div>
         </div>
-
-
-        <!--sobre-->
-        <section class="container" id="sobre">
-          <h1 class="center">Sobre</h1>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illum, reprehenderit laboriosam ab repellat minus magni natus enim eaque harum aliquam necessitatibus soluta vero consectetur quod voluptatem deserunt sint eligendi.</p>
-          </div>
-        
-
-        </section>  
-       <!--Grid fotos-->
-        <section class="row" id="grid">
-          <article class="col s12 m12 l12">
-            <div class="col s12 m4 l4 caixa hoverable"></div>
-            <div class="col s12 m5 l5 caixa hoverable"></div>
-            <div class="col s12 m3 l3 caixa hoverable"></div>
-          </article>
-          <article class="col s12 m12 l12">
-            <div class="col s12 m3 l3 caixa hoverable"></div>
-            <div class="col s12 m5 l5 caixa hoverable"></div>
-            <div class="col s12 m4 l4 accent-2 caixa hoverable"></div>
-          </article>
-          <article class="col s12 m12 l12">
-            <div class="col s12 m5 l5 caixa hoverable"></div>
-            <div class="col s12 m7 l7 caixa hoverable"></div>
-          </article>
-          <article class="col s12 m12 l12">
-            <div class="col s12 m7 l7 caixa hoverable"></div>
-            <div class="col s12 m5 l5 caixa hoverable"></div>
-          </article>
-        </section>
-
-        <!--relatos-->
-        <section id="relatos">
-          <h1>estamos em obras</h1>
-        </section>
-
-
-
-        <!--Formulário-->
-        <section class="container">
-          <article class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="nome" type="text" class="validate">
-                  <label for="nome">Nome</label>
-                </div>
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-                <div class="input-field col s12">
-                  <textarea id="textarea" class="materialize-textarea" data-length="120"></textarea>
-                  <label for="textarea2">Fale mais :D</label>
-                </div>
-              </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-                <i class="material-icons right">send</i>
-              </button>
-            </form>
-          </article>
-        </section>
-
-
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large red">
-                <i class="material-icons">edit</i>
-            </a>
-            <ul>
-                <li>
-                    <a class="btn-floating blue">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating purple">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating green">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>          
+        <div class="center">
+          <button class="btn waves-effect waves-light btn-large purple darken-4" type="submit" name="action">Enviar</button>
         </div>
+      </form>
+    </article>
+  </section>
 
 
-        <!--Footer-->
-        <footer class="page-footer purple darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5>Peter Porker</h5>
-                <p>Fotografo</p>
-                <p>25 anos</p>
-                <p>Amigo da vizinhança</p>
-                <p>Ceilondres</p>
-                <p>(61) +55 91234 5678</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5>Redes sociais</h5>
-                <ul>
-                  <li><a href="#!"><i class="small fab fa-facebook-f"></i> Peter Porker</a></li><br>
-                  <li><a href="#!"><i class="small fab fa-twitter-square"></i> @peterporker</a></li><br>
-                  <li><a href="#!"><i class="small fab fa-instagram-square"></i> @peterporker</a></li><br>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2020 Cddamais+
-            </div>
-          </div>
-        </footer>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating blue">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating purple">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating green">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+
+  <!--Footer-->
+  <footer class="page-footer purple darken-4" id="contatos">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Peter Porker</h5>
+          <p>Fotografo</p>
+          <p>25 anos</p>
+          <p>Amigo da vizinhança</p>
+          <p>Ceilondres</p>
+          <p>(61) +55 91234 5678</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5>Redes sociais</h5>
+          <ul>
+            <li><a href="#!"><i class="small fab fa-facebook-f"></i> Peter Porker</a></li>
+            <li><a href="#!"><i class="small fab fa-twitter-square"></i> @peterporker</a></li>
+            <li><a href="#!"><i class="small fab fa-instagram-square"></i> @peterporker</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020 Cddamais+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
