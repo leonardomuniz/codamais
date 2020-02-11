@@ -21,7 +21,7 @@ nav .brand-logo {
 
 /*LANDING PAGE*/
 #landingpage{
-    background-image: url(images/banner1.jpg);
+    background-image: url(images/banner3.jpg);
     position: relative;
     height: 640px;
     width: 100%;
@@ -33,7 +33,7 @@ nav .brand-logo {
 
 #landingpage h1:nth-child(1){ font-size: 130px; color: white; }
 #landingpage h1:nth-child(2){ font-size: 90px; color: white; margin-top: -30px;}
-#landinpage p { font-size: 45px;color: white; margin-top:10px;}
+#landingpage p { font-size: 35px;color: white; margin-top:10px;}
 
 
 /*sobre*/
@@ -76,17 +76,36 @@ footer li{
 
 
 /*RELATOS*/
-#relatos {
-    background-color:#b71c1c;
-    height: 300px;
+#relatos{
+    margin-top: -90px;
 }
 
+.carousel.carousel-slider{
+    height: 500px !important;
+}
+
+#relatos .foto{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+#relatos .foto img {
+    border-color: white;
+    border-style: solid;
+    border-width: 10px;
+}
+#relatos span{
+    font-size:35px;
+    color: #fdd835;
+}
 
 #relatos h1{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'roboto';
+    font-weight: bolder;
+    color:#fdd835;
 }
 
 
